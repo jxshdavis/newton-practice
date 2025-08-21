@@ -79,7 +79,7 @@ def newtons_method(f, starting_value, epsilon=10 ** (-5), tolerance=10 ** (-5)):
             lambda x: approximate_derivative(function, x, epsilon), current_val, epsilon
         )
 
-        if abs(second_derivative) < 1e-7:
+        if abs(second_derivative) < 1e-12:
             raise RuntimeError(
                 "Second derivative is too close to zero, Newton's method may diverge."
             )
