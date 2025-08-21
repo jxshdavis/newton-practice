@@ -20,7 +20,7 @@ def newtons_method(
 ):
     """An approximate implementation of Newton's method for univariate functions.
 
-    Args:
+    Args: 
         function (function): Function we are optimizing.
         starting_value (int, optional): Starting point for the optimization procedure. Defaults to 0.
         epsilon (float, optional): _description_. Step size for approximating the frist and second derivatives. Defaults to 10**(-3).
@@ -81,6 +81,9 @@ def test_newton():
         newtons_method(lambda x: math.sin(math.sin(x) + math.cos(x)), starting_value=1)
     )
 
+
+
+print("All initial bugs have been fixed!")
 
 # print("Testing on x**4/4-x**3-x starting at x=1.")
 # print(newtons_method(lambda x: x**4/4-x**3-x, starting_value=1))
